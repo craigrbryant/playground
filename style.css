@@ -180,6 +180,13 @@ body {
     padding-bottom: 64px;
 }
 
+.clients {
+    padding: 64px 0 64px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+}
 
 /* Scrolling headline */
 .headline-container {
@@ -261,8 +268,68 @@ body {
   .headline:nth-child(10) {
     animation-delay: 36s;
   }
+
+/*---------------------------------*/
+
+/* Client scroller */
+
+
+.slider {
+    overflow: hidden;
+    width: 100%;
+    animation-play-state: running;
+  }
+  
+  .slider:hover {
+    animation-play-state: paused;
+  }
+
+  .logos-wrapper {
+    display: flex;
+    width: max-content;
+    animation: slidein 30s linear infinite;
+  }
+  
+  .logos {
+    margin-right: 32px;
+    gap: 32px;
+    display: flex;
+  }
+  
+  .fab {
+
+    width: calc(100% / 18); /* Adjust logo width to your preference */
+    display: inline-block;
+    animation: fade-in 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+    transition: filter 0.25s ease-out;
+  }
+  
+  .fab:hover {
+    filter: grayscale(100%);
+}
+
+  /* Keyframes for the scrolling animation */
+  @keyframes slidein {
+    0% {
+      transform: translateX(0); /* Starting position */
+    }
+    100% {
+      transform: translateX(-50%); /* Move the wrapper by 50% of its width, so the next set of logos is revealed */
+    }
+  }
+  
+  /* Fade-in effect for logos */
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
   
 
+/*---------------------------------*/
 
 .container-about-content {
     display: flex;
@@ -306,7 +373,7 @@ body {
 
 }
 
-.clients {
+.soft {
     /* border: 5px solid blue; */
     display: flex;
     flex-direction: row;
@@ -317,12 +384,12 @@ body {
     padding: 32px 64px 64px 64px;
 }
 
-img.client {
+img.software {
     height: 80px;
     transition: transform 0.25s ease-out;
 }
 
-img.client:hover {
+img.software:hover {
     transform: translateY(-8px);
 }
 
