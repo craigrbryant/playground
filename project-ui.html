@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craig Bryant • Visual Designer</title>
+    <link rel="icon" href="images/icons/favicon.ico">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav id="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+            <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+            <dotlottie-player src="images/icons/eye-animation.json" background="transparent" speed="1" style="width: 80px; height: 50.5px;" loop autoplay></dotlottie-player>
+            </div>
+            <div class="nav-container right">
+                <button class="overflow" onclick="toggleNav()"><img src="images/icons/icon-overflow.svg"></button>
+                <button class="nav " onclick="location.href='index.html';">Work</button>
+                <button class="nav" onclick="location.href='about.html';">About</button>
+                <button class="nav">CV</button>
+                <button class="small" onclick="location.href='mailto: craigbryui@gmail.com';">Let's talk!</button>
+               
+        
+        
+            </div>
+            
+        </div>
+    </nav>
+
+    <nav id="nav-menu">
+    </nav>
+    <div id="nav-items">
+        <div class="nav-btn-container">        
+            <div class="nav-btn-container-work"><button class="nav selected" onclick="location.href='index.html';">Work</button></div>
+            <div class="nav-btn-container-work"><button class="nav" onclick="location.href='about.html';">About</button></div>
+            <div class="nav-btn-container-work"><button class="nav">CV</button></div>
+            <div class="nav-btn-container-work"><button class="small" onclick="location.href='mailto: craigbryui@gmail.com';">Let's talk</button></div>
+        </div>
+    </div>
+
+    <div id="menu-avatar"></div>
+
+    <section class="proj-1-hero">
+        <div class="proj-1-hero-container">
+        <div class="proj-1-hero-content"><div class="proj-1-hero-image"></div></div>
+        <div class="proj-1-hero-frame"><img src="images/project-1-hero-frame.svg"></div>
+        </div>
+
+        <script>
+            // Select the background element
+            const background = document.querySelector('.proj-1-hero-content');
+        
+            // Listen for the scroll event on the window
+            window.addEventListener('scroll', function() {
+              // Get the current scroll position
+              const scrollPosition = window.scrollY;
+        
+              // Adjust the speed of the background scroll (slower than the content)
+              const speed = scrollPosition * -0.8; // Change the multiplier for more/less speed
+        
+              // Apply the transformation to the background
+              background.style.transform = `translateY(${speed}px)`;
+            });
+          </script>
+          
+    </section>
+
+    <section class="proj">
+        <div class="proj-container-row">
+            <div class="proj-textbox-row">
+                <h1 class="proj-title">Hike • UI & Design System</h1>
+                <p class="proj-text">Upon joining the team at <span style="font-weight: 500;">Hike</span>, my primary responsibility was carrying out a much needed redesign of the product’s user interface.  This involved simultaneously planning user-journeys and flows for new, upcoming features, while restructuring and redesigning older ones – ensuring that ideas and components were usable across both.</h1>
+            </div>
+        </div>
+
+
+        <div class="proj-container-col">
+            <div class="proj-card">
+                                   <h2 class="proj-subtitle">Skills Employed</h2>
+                                   <div class="proj-textbox-col" style="width: 352px;">
+                                   <div class="proj-textbox-col">
+                                        <ul class="proj-list">
+                                            <li>UI Design</li>
+                                            <li>Design Systems</li>
+                                            <li>Wireframing</li>
+                                            <li>Prototyping</li>
+                                        </ul>
+                                    </div>
+                                    <div class="proj-textbox-col">
+                                        <ul class="proj-list">
+                                            <li>UX Audit</li>
+                                            <li>User Interviews</li>
+                                            <li>Illustration</li>
+                                            <li>Animation</li>
+                                        </ul>
+                                    </div>
+                                  
+                                    </div>
+                         </div>
+
+                                    <div class="proj-card">
+                                        <h2 class="proj-subtitle">Software Used</h2>
+                                        <div class="proj-textbox-col" style="width: 192px;">                                
+                                            <ul class="proj-list nobullet">
+                                                <li><img src="images/icons/software/icon-figma.svg" style="width: 16px; height: 16px; vertical-align: middle;">  Figma</li>
+                                                <li><img src="images/icons/software/icon-ai.svg" style="width: 16px; height: 16px; vertical-align: middle;">  Illustrator</li>
+                                                <li><img src="images/icons/software/icon-ae.svg" style="width: 16px; height: 16px; vertical-align: middle;">  After Effects</li>
+                                                <li></li><img src="images/icons/software/icon-notion.svg" style="width: 16px; height: 16px; vertical-align: middle;">  Notion</li>
+                                            </ul>
+                                    
+                                        </div>
+                        </div>
+
+        
+        </div>
+
+        <div class="proj-container-row">
+            <div class="proj-textbox-row">
+                <h2 class="proj-subtitle">Challenges</h2>
+                <p class="proj-text">This feature-by-feature approach was a quick solution that worked in the short term, but predictably, edge-cases and unexpected scenarios would crop up, and inconsistencies would emerge.  After designing/reworking around 6 features in total, this felt like the ideal time for standardisation and the implementation of a design system.  I was able to get leadership buy-in to dedicate the necessary resource to the task, and worked this into the product pipeline to be as minimally disruptive as possible, alongside other duties and development… famous last words (just kidding 😉).</h1>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="proj" style="background-color: rgb(6, 10, 26);">
+        <div class="proj-container-row">
+            <div class="proj-textbox-row">
+                <h1 class="proj-title">User Interface Overview</h1>
+                </div>
+            <div class="proj-container-ui" style="margin-bottom: 32px;">
+                <div class="proj-ui-circle"></div>
+                <div class="ui-frame-left"></div>
+                <div class="ui-frame-center"></div>
+                <div class="ui-frame-right"></div>
+            </div>
+            <div class="proj-textbox-row slide-in-up left">
+                <h2 class="proj-subtitle">Background and Concept</h2>
+                <div class="proj-container-col">
+                    <div class="proj-textbox-col"><p class="proj-text">The user interface for Hike had to directly embody the company’s core proposition – to demystify SEO, and provide a DIY solution for small to medium-sized businesses.  The primary demographic served is entrepreneurs between the ages of 30 to 55, which includes those who are politely ‘less than’ tech-savvy.  Ease of use was key, while functionally presenting granular information and allowing users to directly action any key insights gleaned. With this in mind, my approach focussed on:</p>
+                    </div>
+                    <div class="proj-textbox-col">
+                        <ul class="proj-bullets">
+                            <li class="proj-bullets"><span style="font-weight: 600";>White space:</span> A clean, minimalist interface with plenty of space surrounding tabular data, and cards for key metrics.</li>
+                            <li class="proj-bullets"><span style="font-weight: 600";>Accessibility:</span> A bold, primary brand colour to create contrast for CTAs and key functions.</li>
+                            <li class="proj-bullets"><span style="font-weight: 600";>Navigation:</span> A consistent, tabbed navigation system to categorise data and organise functions.</li>
+                            <li class="proj-bullets"><span style="font-weight: 600";>Consistency:</span> Reliable design patterns across all features, with the ‘Help’ CTA prominently and consistently placed for easy access.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    </section>
+
+    <section class="proj" style="background-color: rgb(6, 10, 26);">
+        <div class="proj-textbox-row">
+            <h1 class="proj-title">Key Features</h1>
+            </div>
+           
+
+            <!-- Dashboard -->
+
+            <div class="container-feature">
+                <div class="proj-container-col">
+                    <div class="ui-frame-feature slide-in-left"><img src="images/ui-feature-dash.svg" style="width: 100%; border-radius: 8px;"><div class="ui-feature-circle"></div>
+                    </div>
+                </div>
+                <div class="proj-textbox-row left slide-in-right" style="transition-delay: 0.15s;">
+                    <div class="proj-textbox-row left">
+                    <h2 class="proj-subtitle">Dashboard</h2></div>
+                    <p class="proj-text">I have 15 years industry experience touching every corner of design, from sales & marketing roles, UX & product design, print & packaging, and branding & identity design. After hours, I’m passionate about heavy music, hiking, ink illustration, Belgian beer, and my red Labrador Lily.</p>
+                </div>
+            </div>
+
+
+            <!-- Strategy -->
+
+            <div class="container-feature">
+                <div class="proj-textbox-row left slide-in-left" style="transition-delay: 0.15s;">
+                    <div class="proj-textbox-row left">
+                    <h2 class="proj-subtitle">Strategy</h2></div><p class="proj-text">I have 15 years industry experience touching every corner of design, from sales & marketing roles, UX & product design, print & packaging, and branding & identity design. After hours, I’m passionate about heavy music, hiking, ink illustration, Belgian beer, and my red Labrador Lily.</p>
+                </div>
+                <div class="proj-container-col">
+                    <div class="ui-frame-feature slide-in-right"><img src="images/ui-feature-strat.svg" style="width: 100%; border-radius: 8px;"><div class="ui-feature-circle"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Actions -->
+
+            <div class="container-feature">
+                <div class="proj-container-col">
+                    <div class="ui-frame-feature slide-in-left"><img src="images/ui-feature-actions.svg" style="width: 100%; border-radius: 8px;"><div class="ui-feature-circle"></div>
+                    </div>
+                </div>
+                <div class="proj-textbox-row left slide-in-right" style="transition-delay: 0.15s;">
+                    <div class="proj-textbox-row left">
+                    <h2 class="proj-subtitle">Actions</h2></div>
+                    <p class="proj-text">I have 15 years industry experience touching every corner of design, from sales & marketing roles, UX & product design, print & packaging, and branding & identity design. After hours, I’m passionate about heavy music, hiking, ink illustration, Belgian beer, and my red Labrador Lily.</p>
+                </div>
+            </div>
+
+
+            <!-- Backlinks -->
+
+            <div class="container-feature">
+                <div class="proj-textbox-row left slide-in-left" style="transition-delay: 0.15s;">
+                    <div class="proj-textbox-row left">
+                    <h2 class="proj-subtitle" style="text-align: left; align-items: left;">Backlinks</h2></div><p class="proj-text">I have 15 years industry experience touching every corner of design, from sales & marketing roles, UX & product design, print & packaging, and branding & identity design. After hours, I’m passionate about heavy music, hiking, ink illustration, Belgian beer, and my red Labrador Lily.</p>
+                </div>
+                <div class="proj-container-col">
+                    <div class="ui-frame-feature slide-in-right"><img src="images/ui-feature-back.svg" style="width: 100%; border-radius: 8px;"><div class="ui-feature-circle"></div>
+                    </div>
+                </div>
+            </div>
+
+
+           <!-- Reporting -->
+
+           <div class="container-feature">
+            <div class="proj-container-col">
+                <div class="ui-frame-feature slide-in-left"><img src="images/ui-feature-report.svg" style="width: 100%; border-radius: 8px;"><div class="ui-feature-circle"></div>
+                </div>
+            </div>
+            <div class="proj-textbox-row left slide-in-right" style="transition-delay: 0.15s;">
+                <div class="proj-textbox-row left">
+                <h2 class="proj-subtitle">Reporting</h2></div>
+                <p class="proj-text">I have 15 years industry experience touching every corner of design, from sales & marketing roles, UX & product design, print & packaging, and branding & identity design. After hours, I’m passionate about heavy music, hiking, ink illustration, Belgian beer, and my red Labrador Lily.</p>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section class="footer-top">
+        <h2 class="footer">Want to know more? Let’s talk! 📮</h2>
+        <div class="socialmedia">
+            <button class="social email" onclick="location.href='mailto: craigbryui@gmail.com';"><img src="images/icons/icon-email.svg"></button>
+            <button class="social whatsapp"><img src="images/icons/icon-whatsapp.svg"></button>
+            <button class="social li"><img src="images/icons/icon-linked.svg"></button>
+        </div>
+    </section>
+
+    
+    <section class="footer-bottom">
+        <p class="small">Designed, directed, and developed by the red right hand of Craig Bryant © Copyright 2025. <span style="font-weight: 550;"><i>Version 1.2.</i></span></p>
+
+    </section>
+<script src="navbar.js"></script>
+<script src="slide-in.js"></script>
+</body>
+</html>
