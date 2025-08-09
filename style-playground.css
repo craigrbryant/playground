@@ -889,6 +889,7 @@ button.social.li:hover {
     .hero {
         height: 62vh;
         min-height: 620px;
+        justify-content: flex-start;
     }
     
     .avatar.left {
@@ -1088,7 +1089,7 @@ button.social.li:hover {
     }
 
     .headline-container {
-        height: 132px;
+        height: 160px;
         width: 100%;
 
     }
@@ -1126,7 +1127,7 @@ button.social.li:hover {
     }
 
     .headline-container {
-        height: 88px;
+        height: 120px;
     }
 
     .work-container {
