@@ -510,6 +510,7 @@ img.software:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     justify-content: space-between;
 
 }
@@ -575,7 +576,6 @@ p.title {
 
 p.small {
     font-size: 1rem;
-    text-align: left;
     font-weight: 400;
     color: #BEC9FF;
 }
@@ -1111,6 +1111,10 @@ button.social.li:hover {
     .tag {
     font-size: 0.875rem;
     }
+
+    p.small {
+    font-size: 0.875rem;
+}
 }
 
 @media (max-width: 630px) {
@@ -1125,9 +1129,11 @@ button.social.li:hover {
 
     .work-container {
     column-gap: 0px;
-    row-gap: 32px;
+    row-gap: 32px; 
+    }
 
-}
+    p.small {
+    font-size: 0.75rem;
 }
 
 
@@ -1211,4 +1217,5 @@ button.social.li:hover {
     border-width: 8px;
     border-style: solid;
     border-color: transparent transparent rgb(51, 169, 255) transparent;
+}
 }
