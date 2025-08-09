@@ -1167,6 +1167,7 @@ button.social.li:hover {
         width: 100%;
     }
 }
+}
 
 /* Tooltips */
 
@@ -1217,5 +1218,4 @@ button.social.li:hover {
     border-width: 8px;
     border-style: solid;
     border-color: transparent transparent rgb(51, 169, 255) transparent;
-}
 }
